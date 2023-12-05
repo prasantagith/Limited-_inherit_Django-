@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/mdb.min.css' %}">
+    {% block title %}
+        <title>parent</title>
+    {% endblock %}
+</head>
+<body>
+
+    <center>
+        <h4 class="btn btn-success">tata company owner</h4>
+        {% block body_block %}  
+
+            {% endblock %}
+    
+
+    </center>
+    <script src="{% static 'js/mdb.es.min.js' %}"></script>
+    <center>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="{% static 'images/ratan tatasir.avif' %}" width="300px" height="300px" alt="">
+            </a>
+          </nav>
+        </center>
+
+
+
+
+</body>
+</html>
